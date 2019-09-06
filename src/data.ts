@@ -1,5 +1,5 @@
 const basicMats = ["wood", "metal", "stone", "energy"];
-export const matTypes = [1, 2, 3, 4, 5].map(lvl => basicMats.map(t => t + lvl));
+export const matTypes = [1, 2, 3, 4].map(lvl => basicMats.map(t => t + lvl));
 
 export type Point = {
   x: number;
