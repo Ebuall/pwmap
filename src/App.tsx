@@ -1,5 +1,6 @@
 import CssBaseline from "@material-ui/core/CssBaseline";
 import Grid from "@material-ui/core/Grid";
+import Typography from "@material-ui/core/Typography";
 import { SnackbarProvider } from "notistack";
 import React from "react";
 import { Options } from "./Options";
@@ -28,6 +29,16 @@ const App: React.FC = () => {
               <WorldMap points={filtered} />
             </Grid>
           </Grid>
+          <Typography align="center">
+            Based on{" "}
+            <a
+              href="http://www.pwdatabase.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              pwdatabase
+            </a>
+          </Typography>
         </div>
       </SnackbarProvider>
     </>

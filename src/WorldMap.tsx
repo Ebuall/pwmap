@@ -45,7 +45,10 @@ const PointComponent: React.FC<{ value: Point }> = ({ value }) => {
 export const WorldMap: React.FC<{ points: Point[] }> = ({ points }) => {
   return (
     <div style={{ position: "relative" }}>
-      <img src="/world-ru.jpg" alt="world-map" />
+      <img
+        src="http://www.pwdatabase.com/images/maps/ru/world.jpg"
+        alt="world-map"
+      />
       {points.map((p, i) => (
         <PointComponent value={p} key={"" + p.x + p.y + p.z} />
       ))}
